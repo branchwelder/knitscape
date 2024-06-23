@@ -186,7 +186,7 @@ export function simulate(pattern, yarnSequence, palette, scale) {
 
     Object.entries(layer).forEach(([colorIndex, paths]) => {
       context.strokeStyle = yarnPalette[colorIndex];
-      context.stroke(new Path2D(paths.join()));
+      context.stroke(new Path2D(paths.join(" ")));
     });
   }
 
